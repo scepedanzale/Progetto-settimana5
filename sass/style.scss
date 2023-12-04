@@ -1,0 +1,52 @@
+// import
+@import '_override';
+@import '_mixin';
+
+
+section{
+    margin: 1.5em 0;
+    .row{
+        div{
+            @include film();
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+h4{
+    font-size: 1.5em;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+}
+ul li{
+    list-style: none;
+}
+
+
+.f-small{
+    font-size: 0.8em;
+}
+
+.trending{
+    @media screen and (max-width: 767px){
+        
+    }
+}
+
+footer{
+    font-size: 0.8em;
+    .social span{
+        font-size: 2em;
+    }
+    ul{
+        padding: 0;
+        li{
+            margin: 0.8em 0;
+        }
+    }
+}
